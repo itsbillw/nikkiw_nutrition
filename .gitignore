@@ -1,4 +1,5 @@
 __pycache__/
-static/admin/*
+static/
+django2/
 *.pyc
 *.sqlite3
