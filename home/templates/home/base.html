@@ -18,30 +18,33 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/static/home/css/cover.css" />
+
   </head>
 
   <body>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Home</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link active" href="{% url 'home:index' %}">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </nav>
         </div>
       </header>
     </div>
 
-    <div class="parallax1">
+    <div class="parallax">
       <div class="caption">
         <span class="border">NIKKI W NUTRITION</span>
       </div>
     </div>
 
     <div style="color: white;background-color: #575759;text-align:center;padding:50px 80px;text-align: justify;">
+      <a name="about"></a>
       <h3 style="text-align:center;">What you do</h3>
       <p>Space to provide basic info</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet eros id nisi consequat finibus vel sit amet diam. Aliquam massa tortor, efficitur in elementum ac, dignissim eu lectus. Ut sollicitudin orci tempus, vehicula erat eu, sodales lectus. Curabitur finibus nisi sed magna interdum, eu sagittis elit vestibulum. Nam accumsan suscipit lacus. Vivamus eu tincidunt ante. Donec ornare, nunc at suscipit pulvinar, libero quam ullamcorper neque, non elementum nulla turpis malesuada turpis. Mauris ante quam, fermentum sed quam eu, elementum commodo enim. Phasellus suscipit et augue hendrerit laoreet. Donec et tincidunt turpis. Pellentesque mi ipsum, aliquam at velit a, sollicitudin varius lorem. Nulla eget neque finibus, imperdiet mauris sit amet, mattis elit.</p>
@@ -54,11 +57,14 @@
       <div style="color: white;background-color:#eb1a82;text-align:center;padding:50px 80px;text-align: justify;"></div>
     </div>
 
-    <div class="parallax1">
+    <div class="parallax">
+      <a name="contact"></a>
       <div class="caption">
         <span class="border" style="background-color:transparent;font-size:25px;color: #eb1a82;">Contact Info and links</span>
       </div>
     </div>
+
+    <script src="/static/home/js/scroll2top.js"></script>
 
   </body>
 </html>
